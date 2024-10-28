@@ -1,7 +1,8 @@
 .aside {
   text-align: left;
   width: 20vw;
-  border: #bdd9ed solid 1px;
+  border: solid 1px;
+  box-shadow: 12px 12px 2px 1px #89caf8;
   border-radius: 20px;
   padding: 10px;
 }
