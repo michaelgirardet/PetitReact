@@ -1,15 +1,24 @@
-import "./mission.css";
+import "../styles/mission.css";
 
-export default function Mission() {
-  const obj1 = Math.floor(Math.random() * (10 - 0) + 0);
-  const obj2 = Math.floor(Math.random() * (20 - 0) + 0);
-  const punishment = [
-    "To be spanked(lightly).",
-    "To wear their nappies (like a little baby).",
-    "To have no candies for a week.",
-  ];
-  const i = punishment.length - 1;
-  const punish = Math.floor(Math.random() * (i - 0) + 0);
+interface babyProps {
+  baby: {
+    babyName: string;
+    babyImg: string;
+    id: number;
+  };
+}
+
+const obj1 = Math.floor(Math.random() * (10 - 0) + 0);
+const obj2 = Math.floor(Math.random() * (20 - 0) + 0);
+const punishment = [
+  "To be spanked (lightly).",
+  "To wear their nappies (like a little baby).",
+  "To have no candies for a week.",
+];
+const i = punishment.length - 1;
+const punish = Math.floor(Math.random() * (i - 0) + 0);
+
+export default function Mission({ baby }: babyProps) {
   return (
     <div className="aside">
       <style>
@@ -17,6 +26,7 @@ export default function Mission() {
         url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
       </style>
       <h1>Missions</h1>
+      <p>{baby.babyName}</p>
       <section>
         <h2>Objectifs</h2>
         <ul className="objectifs">

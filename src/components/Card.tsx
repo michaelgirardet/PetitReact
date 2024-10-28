@@ -1,13 +1,11 @@
-import { useState } from "react";
 import "../styles/card.css";
 
 interface bebe {
-    pot : number,
-    lait : number
+  pot: number;
+  lait: number;
 }
 
-function card({pot, lait} : bebe) {
-
+function Card({ pot, lait }: bebe) {
   return (
     <>
       <section className="card">
@@ -22,21 +20,17 @@ function card({pot, lait} : bebe) {
             alt="Biberon"
             className="biberon-img"
           />
-          <p>
-            {laitbb}
-          </p>
+          {/* <p>{laitbb}</p> */}
           <img
             src="./src/assets/compote.png"
             alt="Compote"
             className="compote-img"
           />
-          <p>
-            {potbb}
-          </p>
+          {/* <p>{potbb}</p> */}
         </div>
       </section>
     </>
   );
 }
 
-export default card;
+export default Card;
