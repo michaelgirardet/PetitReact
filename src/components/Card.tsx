@@ -1,17 +1,22 @@
 import "../styles/card.css";
 
-interface bebe {
+interface babyProps {
   pot: number;
   lait: number;
+  baby: {
+    babyName: string;
+    babyImg: string;
+    id: number;
+  };
 }
 
-function Card({ pot, lait }: bebe) {
+function Card({ pot, lait, baby }: babyProps) {
   return (
     <>
       <section className="card">
         <img
-          src="./src/assets/babyboss.jpeg"
-          alt="Baby Boss"
+          src={baby.babyImg}
+          alt={baby.babyName}
           className="card-img"
         />
         <div className="compteur">

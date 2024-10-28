@@ -6,7 +6,7 @@ import "./App.css";
 const babyList = [
   {
     babyName: "Boss",
-    babyImg: "",
+    babyImg: "./src/assets/babyboss.jpeg",
     id: 1,
   },
   {
@@ -24,10 +24,12 @@ const babyList = [
 function App() {
   return (
     <>
-      <Card />
-      <aside>
-        <Mission baby={babyList[0]} />
-      </aside>
+      <section className="up-section">
+        <Card baby={babyList[0]} />
+        <aside>
+          <Mission baby={babyList[0]} />
+        </aside>
+      </section>
     </>
   );
 }
