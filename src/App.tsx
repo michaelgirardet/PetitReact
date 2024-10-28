@@ -1,9 +1,19 @@
-import "./App.css";
-import "./components/Card";
-import Card from "./components/Card";
+import { useState } from 'react'
+import Mission from "./components/mission.tsx";
+import './App.css'
 
-function app() {
-  return <Card pot={countPot} lait={countLait} />;
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Card pot={countPot} lait={countLait} />;
+      <aside>
+        <Mission />
+      </aside>
+    </>
+  );
 }
 
-export default app;
+export default App
