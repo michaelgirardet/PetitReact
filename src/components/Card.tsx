@@ -2,11 +2,11 @@ import { useState } from "react";
 import "../styles/card.css";
 
 interface bebe {
-    potbb : number,
-    laitbb : number
+    pot : number,
+    lait : number
 }
 
-function card({potbb, laitbb} : bebe) {
+function card({pot, lait} : bebe) {
 
   return (
     <>

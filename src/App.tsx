@@ -3,7 +3,7 @@ import "./components/Card";
 import Card from "./components/Card";
 
 function app() {
-  return <Card {pot} />
+  return <Card pot={countPot} lait={countLait} />;
 }
 
 export default app;
