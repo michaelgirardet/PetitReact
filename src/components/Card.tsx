@@ -1,9 +1,11 @@
 import "../styles/card.css";
 import "../components/Footer";
 
-interface babyProps {
+interface foodProps {
   countPot: number;
+  setCountLait: (index: number) => void;
   countLait: number;
+  setCountPot: (index: number) => void;
   baby: {
     babyName: string;
     babyImg: string;
@@ -14,7 +16,7 @@ interface babyProps {
   veggies: number;
 }
 
-function Card({ countLait, countPot, baby, biberon, veggies }: babyProps) {
+function Card({ countLait, countPot, baby, biberon, veggies }: foodProps) {
   return (
     <>
       <section className="card">
@@ -30,13 +32,13 @@ function Card({ countLait, countPot, baby, biberon, veggies }: babyProps) {
             alt="Biberon"
             className="biberon-img"
           />
-          <p>{countLait}</p>
+          <p className="count">{countLait}</p>
+          <p className="count">{countPot}</p>
           <img
             src="./src/assets/compote.png"
             alt="Compote"
             className="compote-img"
           />
-          <p>{countPot}</p>
         </div>
       </section>
     </>

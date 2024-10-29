@@ -28,7 +28,7 @@ function Footer({ countLait, setCountLait, countPot, setCountPot }: foodProps) {
       // setMilk(milk + 1)
       // setFood(food + 1)  }}
       >
-        {countLait} 🍼 {countPot} 🍲
+        {/* {countLait} 🍼 {countPot} 🍲 */}
       </div>
     </section>
   );

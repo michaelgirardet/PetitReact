@@ -44,6 +44,7 @@ function App() {
         <Mission baby={babyList[0]} biberon={obj1} veggies={obj2} />{" "}
         {/*nouvelles props nommées pour nos variables à utiliser 2°*/}
       </aside>
+
       <section className="app">
         <Footer
           countLait={countLait}
