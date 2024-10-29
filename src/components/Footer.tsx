@@ -22,14 +22,6 @@ function Footer({ countLait, setCountLait, countPot, setCountPot }: foodProps) {
       <button type="button" onClick={() => setCountPot(countPot + 1)}>
         <img src={Potbb} alt=" pot bb " />
       </button>
-
-      <div
-      //onClick={()=>{
-      // setMilk(milk + 1)
-      // setFood(food + 1)  }}
-      >
-        {/* {countLait} 🍼 {countPot} 🍲 */}
-      </div>
     </section>
   );
 }

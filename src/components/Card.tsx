@@ -3,9 +3,7 @@ import "../components/Footer";
 
 interface foodProps {
   countPot: number;
-  setCountLait: (index: number) => void;
   countLait: number;
-  setCountPot: (index: number) => void;
   baby: {
     babyName: string;
     babyImg: string;
