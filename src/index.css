@@ -2,10 +2,7 @@
   font-family: "Playwrite GB S", cursive;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +30,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   width: 10rem;
+  background-color: white;
 }
 button:hover {
   border-color: #646cff;

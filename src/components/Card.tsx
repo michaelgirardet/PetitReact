@@ -17,12 +17,12 @@ interface foodProps {
 
 function Card({ countLait, countPot, baby, biberon, veggies }: foodProps) {
   function displayImg() {
-    if (countLait <= biberon && countPot <= veggies) {
-      return baby.babyImg;
+    if (countLait > biberon || countPot > veggies) {
+      return baby.badBabyImg;
     } else if (countLait === biberon && countPot === veggies) {
       return baby.goodBabyImg;
     } else {
-      return baby.badBabyImg;
+      return baby.babyImg;
     }
   }
 
