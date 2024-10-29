@@ -17,7 +17,7 @@ interface foodProps {
 
 function Card({ countLait, countPot, baby, biberon, veggies }: foodProps) {
   function displayImg() {
-    if (countLait < biberon || countPot < veggies) {
+    if (countLait <= biberon && countPot <= veggies) {
       return baby.babyImg;
     } else if (countLait === biberon && countPot === veggies) {
       return baby.goodBabyImg;
