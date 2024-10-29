@@ -1,8 +1,8 @@
 import "./App.css";
-import {useState} from 'react'
+import { useState } from "react";
 import Card from "./components/Card.tsx";
 import Mission from "./components/mission.tsx";
-import Footer from './component/Footer.tsx'
+import Footer from "./components/Footer.tsx";
 
 const babyList = [
   {
@@ -23,25 +23,24 @@ const babyList = [
 ];
 
 function App() {
-  
   const [countLait, setCountLait] = useState(0);
   const [countPot, setCountPot] = useState(0);
-  
-return (
-  <>
+
+  return (
+    <>
       <Card />
       <aside>
         <Mission baby={babyList[0]} />
       </aside>
       <section className="app">
         <Footer
-          countLait = {countLait}
-          setCountLait = {setCountLait}
-          countPot = {countPot}
-          setCountPot = {setCountPot}
+          countLait={countLait}
+          setCountLait={setCountLait}
+          countPot={countPot}
+          setCountPot={setCountPot}
         />
       </section>
-   </>
-);
+    </>
+  );
 }
-export default App
+export default App;
