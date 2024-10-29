@@ -1,11 +1,12 @@
 import "../styles/card.css";
+import "../components/Footer";
 
 interface bebe {
-  pot: number;
-  lait: number;
+  countLait: number;
+  countPot: number;
 }
 
-function Card({ pot, lait }: bebe) {
+function Card({ countLait, countPot }: bebe) {
   return (
     <>
       <section className="card">
@@ -20,13 +21,13 @@ function Card({ pot, lait }: bebe) {
             alt="Biberon"
             className="biberon-img"
           />
-          {/* <p>{laitbb}</p> */}
+          <p>{countLait}</p>
           <img
             src="./src/assets/compote.png"
             alt="Compote"
             className="compote-img"
           />
-          {/* <p>{potbb}</p> */}
+          <p>{countPot}</p>
         </div>
       </section>
     </>
