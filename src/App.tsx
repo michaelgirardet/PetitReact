@@ -7,7 +7,7 @@ import Footer from "./components/Footer.tsx";
 const babyList = [
   {
     babyName: "Boss",
-    babyImg: "",
+    babyImg: "./src/assets/babyboss.jpeg",
     id: 1,
   },
   {
@@ -27,13 +27,12 @@ function App() {
   const [countPot, setCountPot] = useState(0);
   return (
     <>
-      <Card />
+      <Card baby={babyList[0]} />
       <aside>
         <Mission baby={babyList[0]} />
       </aside>
       <section className="app">
         <Footer
-          className="footer"
           countLait={countLait}
           setCountLait={setCountLait}
           countPot={countPot}

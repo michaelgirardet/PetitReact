@@ -1,20 +1,21 @@
 import "../styles/card.css";
 import "../components/Footer";
 
-interface bebe {
-  countLait: number;
+interface babyProps {
   countPot: number;
+  countLait: number;
+  baby: {
+    babyName: string;
+    babyImg: string;
+    id: number;
+  };
 }
 
-function Card({ countLait, countPot }: bebe) {
+function Card({ countLait, countPot, baby }: babyProps) {
   return (
     <>
       <section className="card">
-        <img
-          src="./src/assets/babyboss.jpeg"
-          alt="Baby Boss"
-          className="card-img"
-        />
+        <img src={baby.babyImg} alt={baby.babyName} className="card-img" />
         <div className="compteur">
           <img
             src="./src/assets/biberon.png"
