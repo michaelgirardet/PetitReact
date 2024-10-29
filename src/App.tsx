@@ -7,20 +7,23 @@ import Footer from "./components/Footer.tsx";
 const babyList = [
   {
     babyName: "Boss",
-    babyImg: "./src/assets/babyboss.jpeg",
-    badBabyImg: "./src/assets/reau.png",
+    babyImg: "./src/assets/2.png",
+    badBabyImg: "./src/assets/3.png",
+    goodBabyImg: "./src/assets/reau.png",
     id: 1,
   },
   {
     babyName: "Triplets",
     babyImg: "",
     badBabyImg: "",
+    goodBabyImg: "",
     id: 2,
   },
   {
     babyName: "Jimbo",
     babyImg: "",
     badBabyImg: "",
+    goodBabyImg: "",
     id: 3,
   },
 ];
@@ -33,25 +36,27 @@ function App() {
   const [countPot, setCountPot] = useState(0);
   return (
     <>
-      <Card
-        baby={babyList[0]}
-        biberon={obj1}
-        veggies={obj2}
-        countLait={countLait}
-        countPot={countPot}
-      />
-      <aside>
-        <Mission baby={babyList[0]} biberon={obj1} veggies={obj2} />
-        {/*nouvelles props nommées pour nos variables à utiliser 2°*/}
-      </aside>
-
       <section className="app">
-        <Footer
-          countLait={countLait}
-          setCountLait={setCountLait}
-          countPot={countPot}
-          setCountPot={setCountPot}
-        />
+        <section className="left-section">
+          <Card
+            baby={babyList[0]}
+            biberon={obj1}
+            veggies={obj2}
+            countLait={countLait}
+            countPot={countPot}
+          />
+
+          <Footer
+            countLait={countLait}
+            setCountLait={setCountLait}
+            countPot={countPot}
+            setCountPot={setCountPot}
+          />
+        </section>
+        <aside>
+          <Mission baby={babyList[0]} biberon={obj1} veggies={obj2} />
+          {/*nouvelles props nommées pour nos variables à utiliser 2°*/}
+        </aside>
       </section>
     </>
   );

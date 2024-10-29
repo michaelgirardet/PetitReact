@@ -1,17 +1,18 @@
-.up-section{
+.left-section{
   display: flex;
+  flex-direction: column;
   gap: 2em;
-  flex-direction: row;
   background-color: transparent;
   border: solid transparent 20px;
   height: 70vh;
-
 }
 
-aside {
+.app {
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 20px;
 }
 
 

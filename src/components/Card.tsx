@@ -8,6 +8,7 @@ interface foodProps {
     babyName: string;
     babyImg: string;
     badBabyImg: string;
+    goodBabyImg: string;
     id: number;
   };
   biberon: number;
@@ -15,23 +16,29 @@ interface foodProps {
 }
 
 function Card({ countLait, countPot, baby, biberon, veggies }: foodProps) {
+  function displayImg() {
+    if (countLait < biberon || countPot < veggies) {
+      return baby.babyImg;
+    } else if (countLait === biberon && countPot === veggies) {
+      return baby.goodBabyImg;
+    } else {
+      return baby.badBabyImg;
+    }
+  }
+
   return (
     <>
       <section className="card">
-        {countLait > biberon || countPot > veggies ? (
-          <img src={baby.badBabyImg} alt={baby.babyName} className="card-img" />
-        ) : (
-          <img src={baby.babyImg} alt={baby.babyName} className="card-img" />
-        )}
-
+        <img src={displayImg()} alt={baby.babyName} className="card-img" />
         <div className="compteur">
           <img
             src="./src/assets/biberon.png"
             alt="Biberon"
             className="biberon-img"
           />
-          <p className="count">{countLait}</p>
-          <p className="count">{countPot}</p>
+          <p className="count">
+            {countLait}:{countPot}
+          </p>
           <img
             src="./src/assets/compote.png"
             alt="Compote"

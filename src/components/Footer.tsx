@@ -15,12 +15,12 @@ function Footer({ countLait, setCountLait, countPot, setCountPot }: foodProps) {
 
   //
   return (
-    <section>
+    <section className="footer">
       <button type="button" onClick={() => setCountLait(countLait + 1)}>
-        <img src={Laitbb} alt="lait bb " />
+        <img src="./src/assets/biberon.png" alt="lait bb " />
       </button>
       <button type="button" onClick={() => setCountPot(countPot + 1)}>
-        <img src={Potbb} alt=" pot bb " />
+        <img src="./src/assets/compote.png" alt=" pot bb " />
       </button>
     </section>
   );

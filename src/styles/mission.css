@@ -1,7 +1,6 @@
 .aside {
   text-align: left;
   width: 70%;
-  border: solid 1px;
   box-shadow: 12px 12px 2px 1px #89caf8;
   border-radius: 20px;
   padding: 10px;
@@ -9,17 +8,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: white;
 }
 
 h1 {
   font-size: 2.5em;
-  font-family: "Rubik Bubbles", serif;
   color: #3e92cc;
   padding-left: 10px;
 }
 
 section {
-  border: #3e92cc solid 1px;
   border-radius: 20px;
   background-color: #89caf8;
   padding-left: 10px;
@@ -27,7 +25,7 @@ section {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Rubik Bubbles", serif;
   color: black;
   padding-left: 10px;

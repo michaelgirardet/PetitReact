@@ -22,10 +22,6 @@ const punish = Math.floor(Math.random() * (i - 0) + 0);
 export default function Mission({ baby, biberon, veggies }: babyProps) {
   return (
     <div className="aside">
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
-      </style>
       <h1>Missions</h1>
       <p>{baby.babyName}</p>
       <section>

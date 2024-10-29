@@ -4,26 +4,27 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    width: 50%;
+    width: 40rem;
 }
-.aside {
-    width: ;
+
+.card-img {
+    width: 30rem;
 }
+
 .compteur {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-}
-.card-img {
-    width: 60%;
+    align-items: center;
 }
 
 .biberon-img {
     width: 20%;
+    height: 20%;
 }
 
 .compote-img {
     width: 20%;
+    height: 20%;
 }
 .count {
     color: black;
@@ -32,4 +33,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4px 40px;
 }
