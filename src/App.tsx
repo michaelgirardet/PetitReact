@@ -33,7 +33,6 @@ function App() {
       </aside>
       <section className="app">
         <Footer
-          className="footer"
           countLait={countLait}
           setCountLait={setCountLait}
           countPot={countPot}
