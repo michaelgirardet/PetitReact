@@ -27,10 +27,18 @@ function App() {
   const [countPot, setCountPot] = useState(0);
   return (
     <>
-      <Card baby={babyList[0]} />
-      <aside>
-        <Mission baby={babyList[0]} />
-      </aside>
+      <div className="up-section">
+        <Card
+          baby={babyList[0]}
+          countLait={countLait}
+          setCountLait={setCountLait}
+          countPot={countPot}
+          setCountPot={setCountPot}
+        />
+        <aside>
+          <Mission baby={babyList[0]} />
+        </aside>
+      </div>
       <section className="app">
         <Footer
           countLait={countLait}
